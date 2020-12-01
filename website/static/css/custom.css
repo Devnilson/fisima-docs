@@ -1,0 +1,128 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* your custom css */
+
+:root {
+  --color-primary: #FFE502;
+  --color-secondary: black;
+  --border-secondary-light: 1px solid var(--color-secondary);
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.navigationSlider .slidingNav ul li a {
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+.navigationSlider .slidingNav ul li a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.fixedHeaderContainer {
+  border-bottom: var(--border-secondary-light);
+}
+
+.fixedHeaderContainer a {
+  color: var(--color-secondary);
+}
+
+.homeContainer .homeWrapper .projectTitle {
+  color: var(--color-secondary);
+  text-align: left;
+}
+
+.promoSection .promoRow .pluginRowBlock {
+  justify-content: flex-start;
+}
+
+.homeContainer .homeWrapper .projectLogo {
+  top: 50px;
+  padding-right: 0;
+}
+
+.homeContainer .homeWrapper .projectLogo img {
+  max-height: unset;
+  height: 250px;
+}
+
+.imageAlignTop .blockImage {
+  max-width: unset;
+}
+
+.gridBlock .twoByGridBlock img,
+.gridBlock .threeByGridBlock img,
+.gridBlock .fourByGridBlock img {
+  max-width: unset;
+  width: 450px;
+}
+
+.button {
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary)
+}
+
+.button:hover {
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.lightBackground,
+.darkBackground {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.nav-footer {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.nav-footer .sitemap h5 {
+  font-weight: 700;
+}
+
+.nav-footer .sitemap h5,
+.nav-footer .sitemap a {
+  color: var(--color-primary);
+}
+
+.nav-footer .sitemap a {
+  font-weight: 300;
+}
+
+.nav-footer .sitemap a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .navigationSlider .slidingNav ul li a {
+    color: var(--color-secondary);
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
