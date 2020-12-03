@@ -92,15 +92,6 @@ class Index extends React.Component {
       </Container>
     );
 
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
     const TryOut = () => (
       <Block id="try">
         {[
@@ -160,6 +151,12 @@ class Index extends React.Component {
             imageAlign: 'top',
             title: 'Mealy finite state machine',
           },
+          {
+            content: 'The content of my second feature',
+            image: `${baseUrl}img/deterministic-finite-state-machine.svg`,
+            imageAlign: 'top',
+            title: 'deterministic finite state machine',
+          },
         ]}
       </Block>
     );
@@ -199,7 +196,6 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
           <LearnHow />
           <TryOut />
           <Description />
