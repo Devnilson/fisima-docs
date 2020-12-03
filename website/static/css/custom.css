@@ -75,9 +75,35 @@ body {
   height: 250px;
 }
 
+.homeContainer .homeWrapper  .button {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.homeContainer .homeWrapper .buttonWrapper {
+  margin-right: 20px;
+}
+
+.homeContainer .homeWrapper .buttonWrapper:last-child {
+  margin-right: 0;
+}
+
+.homeContainer .homeWrapper  .button:hover {
+  color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
 .mainContainer .container {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.mainContainer .container .wrapper .imageAlignSide p {
+  text-align: left;
 }
 
 .imageAlignTop .blockImage {
@@ -86,6 +112,10 @@ body {
 
 .gridBlock .blockElement {
   margin-bottom: 40px;
+}
+
+.gridBlock .twoByGridBlock img {
+  max-width: 50%;
 }
 
 .gridBlock .fourByGridBlock:nth-child(1)  img {
@@ -101,20 +131,6 @@ body {
 .gridBlock .fourByGridBlock:nth-child(3)  img {
   max-width: unset;
   width: 477px;
-}
-
-.button {
-  color: var(--color-secondary);
-  border: 1px solid var(--color-secondary)
-}
-
-.button:hover {
-  color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 9px;
-  padding-right: 9px;
 }
 
 .lightBackground,

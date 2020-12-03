@@ -122,15 +122,14 @@ class Index extends React.Component {
       </Block>
     );
 
-    const LearnHow = () => (
+    const TypescriptFriendly= () => (
       <Block background="light">
         {[
           {
-            content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            content: `TypeScript allows you to write safer and more robust code, while also improving the developer experience.`,
+            image: `${baseUrl}img/typescript-logo.svg`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            title: 'Typescript friendly',
           },
         ]}
       </Block>
@@ -196,7 +195,7 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <LearnHow />
+          <TypescriptFriendly />
           <TryOut />
           <Description />
           <Showcase />
