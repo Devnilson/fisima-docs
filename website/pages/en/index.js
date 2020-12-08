@@ -92,31 +92,28 @@ class Index extends React.Component {
       </Container>
     );
 
-    const TryOut = () => (
+    const Tested = () => (
       <Block id="try">
         {[
           {
-            content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+            content:'To make your landing page more attractive, use illustrations! Check out [**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. The illustrations you see on this page are from unDraw.',
+            image: `${baseUrl}img/tested.svg`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: 'Fully tested',
           },
         ]}
       </Block>
     );
 
-    const Description = () => (
-      <Block background="dark">
+    const Documented = () => (
+      <Block>
         {[
           {
             content:
               'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
+            image: `${baseUrl}img/documented.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Fully documented',
           },
         ]}
       </Block>
@@ -154,38 +151,23 @@ class Index extends React.Component {
             content: 'The content of my second feature',
             image: `${baseUrl}img/deterministic-finite-state-machine.svg`,
             imageAlign: 'top',
-            title: 'deterministic finite state machine',
+            title: 'Deterministic finite state machine',
           },
         ]}
       </Block>
     );
 
-    const Showcase = () => {
-      if ((siteConfig.users || []).length === 0) {
-        return null;
-      }
-
-      const showcase = siteConfig.users
-        .filter((user) => user.pinned)
-        .map((user) => (
-          <a href={user.infoLink} key={user.infoLink}>
-            <img src={user.image} alt={user.caption} title={user.caption} />
-          </a>
-        ));
-
-      const pageUrl = (page) =>
-        baseUrl + (language ? `${language}/` : '') + page;
-
+    const Maintainers = () => {
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
-          <div className="logos">{showcase}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl('users.html')}>
-              More {siteConfig.title} Users
-            </a>
-          </div>
+          <h2>Who is maintaining this?</h2>
+          <p>This project is maintained by this people</p>
+          <a class="maintainer" href="https://github.com/javierlopezdeancos">
+            <img
+              alt="javier lopez"
+              src="https://avatars3.githubusercontent.com/u/1202463?s=460&u=f910eaf5ab26b310089e51f5b1e4c599a367ab57&v=4"
+            />
+          </a>
         </div>
       );
     };
@@ -196,9 +178,9 @@ class Index extends React.Component {
         <div className="mainContainer">
           <Features />
           <TypescriptFriendly />
-          <TryOut />
-          <Description />
-          <Showcase />
+          <Tested />
+          <Documented />
+          <Maintainers />
         </div>
       </div>
     );
